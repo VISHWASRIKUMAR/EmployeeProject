@@ -32,6 +32,13 @@ public class EmployeeController {
     }
     
     
+    @GetMapping(value ="/GetSingleObject/{s}")
+    public Employee getObject(@PathVariable int s) {
+    	
+    	return es.getObject(s);
+    }
+    
+    
     @DeleteMapping(value ="/deleteSingleObject/{s}")
     
     public String deleteSingleObject(@PathVariable int s){
