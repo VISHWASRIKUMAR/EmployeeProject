@@ -24,6 +24,16 @@ public class jenkins1 {
 	
 	
 }
+ 
+ @GetMapping("/jenkins1")
+ public String name2(){
+	
+	String a1 ="Arun";
+	
+	return a1;
+	
+	
+}
 
 
 }
